@@ -1,18 +1,13 @@
+import { Box, Typography } from '@mui/material'
 import './App.css'
-import Nav from './Nav/Nav'
+import Nav from './components/Nav'
 
 function App() {
-
   return (
-    <>
-        <header>
-          <Nav />
-          <h2>Проектная деятельность</h2>
-        </header>
-        <main>
-
-        </main>
-    </>
+    <Box sx={{ bgcolor: 'background.default', mt: 5}}>
+      <Nav/>
+      <Typography variant="h2">Главная</Typography>
+    </Box>
   )
 }
 
