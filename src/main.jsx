@@ -2,7 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
-import Projects from './pages/Projects.jsx'
+import Projects from './pages/Projects/Projects.jsx'
 import Duties from './pages/Duties.jsx'
 import './index.css'
 

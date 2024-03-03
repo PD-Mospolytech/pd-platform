@@ -1,0 +1,38 @@
+[
+    {
+        "categoryId": 1,
+        "categoryName": "IT"
+    },
+    {
+        "categoryId": 2,
+        "categoryName": "Дизайн и мультимедия"
+    },
+    {
+        "categoryId": 3,
+        "categoryName": "Научные"
+    },
+    {
+        "categoryId": 4,
+        "categoryName": "Соцтех"
+    },
+    {
+        "categoryId": 5,
+        "categoryName": "Стратегические"
+    },
+    {
+        "categoryId": 6,
+        "categoryName": "Технология"
+    },
+    {
+        "categoryId": 7,
+        "categoryName": "Транспорт"
+    },
+    {
+        "categoryId": 8,
+        "categoryName": "Урбанистика"
+    },
+    {
+        "categoryId": 9,
+        "categoryName": "Химбиотех"
+    }
+]

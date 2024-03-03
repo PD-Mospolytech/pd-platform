@@ -1,0 +1,54 @@
+[
+    {
+        "roleId": 1,
+        "roleName": "Биотехнолог"
+    },
+    {
+        "roleId": 2,
+        "roleName": "Горный инженер "
+    },
+    {
+        "roleId": 3,
+        "roleName": "Дизайнер (game)"
+    },
+    {
+        "roleId": 4,
+        "roleName": "Дизайнер (UX/UI)"
+    },
+    {
+        "roleId": 5,
+        "roleName": "Дизайнер (остальное)"
+    },
+    {
+        "roleId": 6,
+        "roleName": "Журналист"
+    },
+    {
+        "roleId": 7,
+        "roleName": "Конструктор"
+    },
+    {
+        "roleId": 8,
+        "roleName": "Маркетолог / специалист по PR"
+    },
+    {
+        "roleId": 9,
+        "roleName": "Материаловед"
+    },
+    {
+        "roleId": 10,
+        "roleName": "Менеджер"
+    },
+    {
+        "roleId": 11,
+        "roleName": "Программист"
+    },
+    {
+        "roleId": 12,
+        "roleName": "Программист СУБД"
+    },
+    {
+        "roleId": 13,
+        "roleName": "Разработчик WEB"
+    }
+]
