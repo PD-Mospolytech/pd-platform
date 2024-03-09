@@ -13,7 +13,7 @@
     padding: 50px;
 }
 
-.projects_filter{
+.projects_filter {
     text-decoration: underline;
     color: white;
     font-weight: 300;
@@ -63,3 +63,78 @@
 .filter_header {
     font-size: 24px;
 }
+
+
+.duties {
+    width: 100%;
+    background: url("./assets/duties_bg.png") no-repeat center center;
+    background-size: 120%;
+    text-align: left;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+}
+
+.step strong {
+    font-size: 24px;
+    font-weight: 900;
+    font-family: 'Gilroy-Bold', sans-serif;
+    position: relative;
+}
+
+.step strong::before {
+    content: '';
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    position: absolute;
+    top: 8px; 
+    left: -28px; 
+}
+
+.step strong::after {
+    content: '';
+    display: block;
+    height: 132px;
+    width: 25px;
+    background: url('./assets/arrow.svg') no-repeat center center;
+    position: absolute;
+    top: 46px;
+    left: -36px;
+}
+
+.step:last-child strong::after  {
+    display: none;
+}
+
+.step-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 28px;
+    padding: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
