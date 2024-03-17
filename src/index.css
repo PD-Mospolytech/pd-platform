@@ -1,16 +1,16 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .projects_header {
-    height: 300px;
-    background-image: url('assets/header_background.png');
+    background-image: url("assets/header_background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: left;
-    padding: 50px;
+    padding: 42px 50px 100px;
 }
 
 .projects_filter {
@@ -65,11 +65,10 @@
 }
 
 
-.duties {
-    width: 100%;
-    background: url("./assets/duties_bg.png") no-repeat center center;
-    background-size: 120%;
-    text-align: left;
+
+.duties-main {
+   background: url("./assets/duties_bg.png") no-repeat center center;
+   background-size: cover;
 }
 
 .steps {
@@ -87,12 +86,12 @@
 .step strong {
     font-size: 24px;
     font-weight: 900;
-    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: "Gilroy-Bold", sans-serif;
     position: relative;
 }
 
 .step strong::before {
-    content: '';
+    content: "";
     display: block;
     height: 10px;
     width: 10px;
@@ -104,11 +103,11 @@
 }
 
 .step strong::after {
-    content: '';
+    content: "";
     display: block;
     height: 132px;
     width: 25px;
-    background: url('./assets/arrow.svg') no-repeat center center;
+    background: url("./assets/arrow.svg") no-repeat center center;
     position: absolute;
     top: 46px;
     left: -36px;
@@ -126,15 +125,33 @@
     padding: 24px;
 }
 
+.nav-link-hover {
+   position: relative;
+   padding-left: 0;
+   transition: all .5s;
+   opacity: .5;
+}
 
+.nav-link-hover::before {
+   content: "";
+   display: block;
+   opacity: 0;
+   height: 2px;
+   width: 0px;
+   background: white;
+   position: absolute;
+   top: 50%; left: 0;
+   margin-top: -1px;
+   transition: all .7s;
+}
 
+.nav-link-hover:hover {
+   position: relative;
+   padding-left: 32px;
+   opacity: 1;
+}
 
-
-
-
-
-
-
-
-
-
+.nav-link-hover:hover:before {
+   opacity: 1;
+   width: 24px;
+}

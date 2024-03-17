@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import Nav from "../../components/Nav";
-import logo from '../../assets/logo.svg';
+import logo from "../../assets/logo.svg";
 import Filter from "./components/Filter";
 import ProjectsList from "./components/ProjectsList";
 import React from "react";
@@ -22,26 +22,40 @@ export default function Projects () {
    }
 
    return (
-   <Box sx={{ bgcolor: 'background.default', mt: 5}}>
+   <Box sx={{
+      display: "flex",
+      flexWrap: "nowrap",
+      pl: "64px"
+   }}>
       <Nav />
-      <div className="projects_header">
-         <img style={{marginBottom: '30px'}} src={logo} alt="Логотип" />
-         <Typography mb="30px" variant="h5" color="white" fontWeight="400">ПРОЕКТНАЯ ДЕЯТЕЛЬНОСТЬ</Typography>
-         <Typography mb="30px" variant="h3" color="white" fontWeight="700">Витрина проектов!</Typography>
+      
+      <div>
+         <div className="projects_header">
+            <img src={logo} alt="Логотип" />
+            <Typography variant="h5" sx={{
+               fontWeight: "400",
+               color: "white",
+               my: "30px",
+            }}>
+               ПРОЕКТНАЯ ДЕЯТЕЛЬНОСТЬ
+            </Typography>
+            
+            <Typography mb="30px" variant="h3" color="white" fontWeight="700">Витрина проектов!</Typography>
 
-         <Filter 
-            isFilter={isFilter}
-            toggleFilter={toggleFilter}
-            changeCategoryId={changeCategoryId}
-            changeRoleId={changeRoleId}
+            <Filter 
+               isFilter={isFilter}
+               toggleFilter={toggleFilter}
+               changeCategoryId={changeCategoryId}
+               changeRoleId={changeRoleId}
+            />
+
+         </div>
+
+         <ProjectsList 
+            categoryId={categoryId}
+            roleId={roleId}
          />
-
       </div>
-
-      <ProjectsList 
-         categoryId={categoryId}
-         roleId={roleId}
-      />
       
     </Box>
    )
