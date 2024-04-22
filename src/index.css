@@ -155,3 +155,18 @@
    opacity: 1;
    width: 24px;
 }
+
+.transfer-main {
+   background: url("./assets/transfer_bg.jpg") no-repeat center center;
+   background-size: cover;
+}
+
+.send-project-main {
+   background: url("./assets/send-project_bg.jpg") no-repeat center center;
+   background-size: cover;
+}
+
+.raiting-main {
+   background: url("./assets/raiting_bg.jpg") no-repeat center center;
+   background-size: cover;
+}

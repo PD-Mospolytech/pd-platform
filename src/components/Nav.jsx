@@ -181,6 +181,38 @@ export default function Nav () {
 								         </Typography>
 							         </NavLink>
 							      </MenuItem>
+
+                                  <MenuItem onClick={() => scrollToSection("raiting")}>
+							         <NavLink to="/raiting" style={{ textDecoration: "none" }}>
+								         <Typography variant="body2" className="nav-link-hover" sx={{ color: "#fff", fontSize: "32px" }}>
+									         cтруктура рейтинга
+								         </Typography>
+							         </NavLink>
+							      </MenuItem>
+
+                                  <MenuItem onClick={() => scrollToSection("send-project")}>
+							         <NavLink to="/send-project" style={{ textDecoration: "none" }}>
+								         <Typography variant="body2" className="nav-link-hover" sx={{ color: "#fff", fontSize: "32px" }}>
+									         подать проект
+								         </Typography>
+							         </NavLink>
+							      </MenuItem>
+
+                                  <MenuItem onClick={() => scrollToSection("transfer")}>
+							         <NavLink to="/transfer" style={{ textDecoration: "none" }}>
+								         <Typography variant="body2" className="nav-link-hover" sx={{ color: "#fff", fontSize: "32px" }}>
+									         перевод из другого вуза
+								         </Typography>
+							         </NavLink>
+							      </MenuItem>
+
+                                  <MenuItem onClick={() => scrollToSection("acceleration")}>
+							         <NavLink to="/acceleration" style={{ textDecoration: "none" }}>
+								         <Typography variant="body2" className="nav-link-hover" sx={{ color: "#fff", fontSize: "32px" }}>
+									         aкселерационная программа
+								         </Typography>
+							         </NavLink>
+							      </MenuItem>
 							      
 						      </Box>
 					      </Drawer>
